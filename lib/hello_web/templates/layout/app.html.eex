@@ -28,7 +28,9 @@
       <p>Local: <%= @locale %> </p>
       <p class="alert alert-info" role="alert"><%= get_flash(@conn, :info) %></p>
       <p class="alert alert-danger" role="alert"><%= get_flash(@conn, :error) %></p>
+      <%= render(HelloWeb.PageView, "test.html", message: "Testing template rendering") %>
       <%= @inner_content %>
     </main>
+
   </body>
 </html>
