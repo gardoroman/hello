@@ -16,7 +16,10 @@
     <strong>Views:</strong>
     <%= @page.views %>
   </li>
-
+  <li>
+    <strong>Author:</strong>
+    <%= get_author_name(@page) %>
+  </li>
 </ul>
 
 <span><%= link "Edit", to: Routes.cms_page_path(@conn, :edit, @page) %></span>
