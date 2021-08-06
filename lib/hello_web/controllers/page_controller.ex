@@ -14,7 +14,7 @@ defmodule HelloWeb.PageController do
 
     #------------------------------------------------
     conn
-    # |> put_layout(false)
+    |> put_layout("admin.html")
     # |> put_flash(:info, "Flash info")
     # |> put_flash(:error, "Flash error")
     |> render("index.html")
